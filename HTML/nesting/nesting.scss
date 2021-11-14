@@ -1,0 +1,23 @@
+// sass --watch variables.scss:variables.css
+$color1: green;
+$color2: blue;
+
+div {
+    p {
+        color:$color1;
+    }
+
+    ul {
+        font-size: 14px;
+        color: $color1;
+    }
+}
+
+p {
+    color:$color2;
+}
+
+ul {
+    font-size: 14px;
+    color: $color2;
+}
