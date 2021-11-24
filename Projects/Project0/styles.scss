@@ -1,0 +1,36 @@
+$primaryBackgroundColor: rgb(27,27,27);
+$secondaryBackgroundColor: rgb(0,0,0);
+$accent: rgb(255,153,0);
+
+$primaryFontColor: rgb(255,255,255);
+$secondaryFontColor: rgb(187,187,187);
+
+
+html body {
+    text-align: center;
+    background-color: $secondaryBackgroundColor;
+    color: $secondaryFontColor;
+}
+
+a{
+    text-decoration: none!important; /* no underline */
+}
+
+.primary {
+    background-color: $primaryBackgroundColor;
+    color: $primaryFontColor
+}
+
+.secondary {
+    background-color: $secondaryBackgroundColor;
+    color: $secondaryFontColor
+}
+
+.accentFontColor {
+    color: $accent;
+}
+
+.accentBackgrounfColor {
+    background-color: $accent;
+}
+

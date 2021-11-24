@@ -1,0 +1,30 @@
+html body {
+  text-align: center;
+  background-color: black;
+  color: #bbbbbb;
+}
+
+a {
+  text-decoration: none !important;
+  /* no underline */
+}
+
+.primary {
+  background-color: #1b1b1b;
+  color: white;
+}
+
+.secondary {
+  background-color: black;
+  color: #bbbbbb;
+}
+
+.accentFontColor {
+  color: #ff9900;
+}
+
+.accentBackgrounfColor {
+  background-color: #ff9900;
+}
+
+/*# sourceMappingURL=styles.css.map */

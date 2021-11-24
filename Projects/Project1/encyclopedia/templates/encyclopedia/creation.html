@@ -1,0 +1,30 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    Encyclopedia
+{% endblock %}
+
+{% block body %}
+    {% if messages %}
+        <ul class="messages">
+            {% for message in messages %}
+                <li class="{{ message.tags }}">{{ message }}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+    <form action="{% url 'encyclopedia-creation'%}" method="POST">
+        {% csrf_token %}
+        {{ form.non_field_errors }}
+        <div class="fieldWrapper">
+            {{ form.wiki_title.errors }}
+                <label for="{{ form.wiki_title.id_for_label }}">Title:</label>
+            {{ form.wiki_title }}
+        </div>
+        <div class="fieldWrapper">
+            {{ form.wiki_body.errors }}
+                <label for="{{ form.wiki_body.id_for_label }}" class="">Body:</label>
+            {{ form.wiki_body }}
+        </div>
+        <input type="submit" value="Submit"/>
+    </form>
+{% endblock %}
