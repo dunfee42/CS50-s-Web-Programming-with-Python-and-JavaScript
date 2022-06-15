@@ -3,8 +3,6 @@ from django.http.response import HttpResponseRedirect
 from django.urls import reverse
 from django.shortcuts import render
 
-tasks = []
-
 class NewTaskForm(forms.Form):
     task = forms.CharField(label="New Task")
     priority = forms.IntegerField(label="Priority", min_value=1, max_value=10)
